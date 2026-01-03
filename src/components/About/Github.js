@@ -1,8 +1,11 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import { profile } from "../../profile";
 
 function Github() {
+  if (!profile.githubUsername) return null;
+
   return (
     <Row
       style={{
@@ -15,7 +18,7 @@ function Github() {
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
-        username="soumyajit4419"
+        username={profile.githubUsername}
         blockSize={30}
         blockMargin={10}
         color="#c084f5"

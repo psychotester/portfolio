@@ -1,16 +1,15 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+/**
+ * Reusable typewriter.
+ * Pass strings from profile config to keep the hero unique and easy to maintain.
+ */
+function Type({ strings }) {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: strings && strings.length ? strings : ["Full-Stack Web Developer"],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

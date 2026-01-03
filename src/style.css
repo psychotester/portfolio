@@ -759,3 +759,18 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+/* --- Custom hero copy (keeps layout, improves readability) --- */
+.home-title{
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+.home-subtitle{
+  font-size: 1em;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+}
